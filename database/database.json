@@ -1,0 +1,345 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Vo Tuan Kiet",
+      "email": "theonlytruth25012005@gmail.com",
+      "password": "Tuankiet@123",
+      "token": "9HdQewtdP1MTpWJ3PSvQ"
+    },
+    {
+      "id": 2,
+      "fullName": "Vo Tuan A",
+      "email": "votuana@gmail.com",
+      "password": "Tuankiet@123",
+      "token": "NBpPNPdWRjjSPBCj3PZW"
+    },
+    {
+      "id": 3,
+      "fullName": "Vo Tuan B",
+      "email": "votuanb@gmail.com",
+      "password": "Tuankiet@123",
+      "token": "IA135mPW1k0SuPKOvfJo"
+    },
+    {
+      "id": 4,
+      "fullName": "Vo Tuan C",
+      "email": "votuanc@gmail.com",
+      "password": "Tuankiet@123",
+      "token": "xDoOUXqVjvOhlubtqA24"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "CSS"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "question": "HTML là viết tắt của gì?",
+      "answers": [
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language",
+        "Hypertext Markup Language"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 2,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để tạo một liên kết trong HTML?",
+      "answers": [
+        "<a>",
+        "<link>",
+        "<href>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "question": "Thuộc tính nào trong HTML dùng để đặt văn bản thay thế cho hình ảnh?",
+      "answers": [
+        "title",
+        "alt",
+        "src"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "topicId": 1,
+      "question": "Thẻ nào được dùng để tạo một danh sách có thứ tự?",
+      "answers": [
+        "<ul>",
+        "<ol>",
+        "<li>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "topicId": 1,
+      "question": "HTML5 giới thiệu thẻ nào dùng để nhúng video?",
+      "answers": [
+        "<video>",
+        "<media>",
+        "<movie>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "topicId": 2,
+      "question": "CSS là viết tắt của gì?",
+      "answers": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Sheets"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "topicId": 2,
+      "question": "Lệnh nào được sử dụng để thay đổi màu chữ trong CSS?",
+      "answers": [
+        "color",
+        "font-color",
+        "text-color"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "topicId": 2,
+      "question": "Thuộc tính nào dùng để đặt hình nền cho trang web?",
+      "answers": [
+        "background-color",
+        "background-image",
+        "background-style"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 9,
+      "topicId": 2,
+      "question": "Cách nào giúp chọn tất cả các phần tử <p> trong một trang?",
+      "answers": [
+        "p { }",
+        ".p { }",
+        "#p { }"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "topicId": 2,
+      "question": "Thuộc tính nào dùng để căn giữa một phần tử?",
+      "answers": [
+        "align",
+        "center",
+        "text-align"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 11,
+      "topicId": 3,
+      "question": "JavaScript là gì?",
+      "answers": [
+        "Một ngôn ngữ lập trình phía máy chủ",
+        "Một ngôn ngữ lập trình phía trình duyệt",
+        "Một phần mở rộng của HTML"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 12,
+      "topicId": 3,
+      "question": "Làm thế nào để khai báo biến trong JavaScript?",
+      "answers": [
+        "var myVar;",
+        "variable myVar;",
+        "v myVar;"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để in ra console?",
+      "answers": [
+        "console.print()",
+        "console.log()",
+        "print.console()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 14,
+      "topicId": 3,
+      "question": "Sự kiện nào được kích hoạt khi người dùng nhấn vào một phần tử?",
+      "answers": [
+        "onmouseover",
+        "onclick",
+        "onchange"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để tạo một vòng lặp for?",
+      "answers": [
+        "for (i = 0; i < 5; i++)",
+        "loop (i = 0; i < 5; i++)",
+        "for loop(i = 0; i < 5; i++)"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "answers": [
+    {
+      "userId": 1,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 3
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 2
+        },
+        {
+          "questionId": 4,
+          "answer": 2
+        },
+        {
+          "questionId": 5,
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "userId": 2,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 6,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 1
+        },
+        {
+          "questionId": 8,
+          "answer": 2
+        },
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "userId": 3,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 11,
+          "answer": 2
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 2
+        },
+        {
+          "questionId": 15,
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "userId": 4,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 2
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 2
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 5,
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 6,
+          "answer": 1
+        },
+        {
+          "questionId": 7,
+          "answer": 2
+        },
+        {
+          "questionId": 8,
+          "answer": 2
+        },
+        {
+          "questionId": 9,
+          "answer": 3
+        },
+        {
+          "questionId": 10,
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}
