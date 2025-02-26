@@ -11,8 +11,9 @@ function Answers(){
 
       let result = [];
       for(let i = 0; i < answersByUserId.length; i++){
+        const topicData = topics.find(item => item.id === String(answersByUserId[i].topicId)) || {};
         result.push({
-          ...topics.find(item => item.id === answersByUserId[i].topicId),
+          ...topicData,
           ...answersByUserId[i]
         });
       }
@@ -20,7 +21,6 @@ function Answers(){
     }
     fetchApi();
   },[])
-  console.log(dataAnswers);
   return(
     <>
       <h2>Danh sach bai da luyen tap</h2>
