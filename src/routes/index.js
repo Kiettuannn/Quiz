@@ -7,42 +7,49 @@ import Result from "../pages/Result";
 import Answers from "../pages/Answers";
 import Topic from "../pages/Topic";
 import PrivateRoute from "../components/PrivateRoute";
+import LayoutDefault from "../layouts/default";
 export const routes = [
   {
     path: "/",
-    element: <Home />
-  },
-  {
-    path: "/login",
-    element: <Login />
-  },
-  {
-    path: "/logout",
-    element: <Logout />
-  },
-  {
-    path: "/register",
-    element: <Register />
-  },
-  {
-    element: <PrivateRoute />,
+    element: <LayoutDefault />,
     children: [
       {
-        path: "/quiz",
-        element: <Quiz />
+        path: "/",
+        element: <Home />
       },
       {
-        path: "/answers",
-        element: <Answers />
+        path: "/login",
+        element: <Login />
       },
       {
-        path: "/result",
-        element: <Result />
+        path: "/logout",
+        element: <Logout />
       },
       {
-        path: "/topic",
-        element: <Topic />
+        path: "/register",
+        element: <Register />
+      },
+      {
+        element: <PrivateRoute />,
+        children: [
+          {
+            path: "/quiz/:id",
+            element: <Quiz />
+          },
+          {
+            path: "/answers",
+            element: <Answers />
+          },
+          {
+            path: "/result/:id",
+            element: <Result />
+          },
+          {
+            path: "/topic",
+            element: <Topic />
+          },
+        ]
       },
     ]
-  },
+  }
 ]

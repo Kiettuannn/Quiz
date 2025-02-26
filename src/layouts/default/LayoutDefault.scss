@@ -1,0 +1,40 @@
+.header{
+  margin: 10px 0;
+  padding: 20px 30px;
+  background-color: navy;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    &__menu ul{
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li{
+        margin-left: 20px;
+      }
+    }
+  }
+  
+}
+.layout-default{
+  background-color: #fff;
+}
+
+.footer{
+  background-color: navy;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
