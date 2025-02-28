@@ -23,7 +23,11 @@ function Quiz(){
     fetchApi();
   },[]);
 
-  console.log(dataQuestion);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+  }
+  // console.log(dataQuestion);
 
   return(
     <>
@@ -32,6 +36,23 @@ function Quiz(){
           {dataTopic.name}
         </>
       )}</h2>
+      <div className="form-quiz">
+        <form onSubmit={handleSubmit}>
+          {dataQuestion.map((item,index) => (
+            <div className="form-quiz__item" key={item.id}>
+              <p>Cau {index+1}: {item.question}</p>
+              {item.answers.map((itemAns,indexAns) => (
+                <div className="form-quiz__answer" key={indexAns}>
+                  <input type="radio" name={item.id} value={indexAns} id={`quiz-${item.id}-${indexAns}`}></input>
+                  <label htmlFor={`quiz-${item.id}-${indexAns}`}>{itemAns}</label>
+                </div>
+              ))}
+            </div>
+          ))}
+        <button type="submit">Nop bai</button>
+        </form>
+
+      </div>
     </>
   )
 }
