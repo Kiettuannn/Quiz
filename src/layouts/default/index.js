@@ -33,11 +33,6 @@ function LayoutDefault() {
                         Câu trả lời
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/result">
-                        Kết quả
-                      </NavLink>
-                    </li>
                   </ul>
                 </>
               )}

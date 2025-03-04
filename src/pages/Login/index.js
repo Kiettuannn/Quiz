@@ -31,19 +31,6 @@ function Login() {
   // };
   return (
     <>
-      {/* <form onSubmit={handleSubmit} className="form-login">
-        <h2 className="form-login__title">Login</h2>
-        <div className="form-loin__input">
-          <div>
-            <input type="email" placeholder="Nhập email" />
-          </div>
-          <div>
-            <input type="password" placeholder="Nhập mật khẩu" />
-          </div>
-        </div>
-        <button className="form-login__submit" type="Đăng nhập">Đăng nhập</button>
-      </form> */}
-
       <Flex gap="middle" vertical align="center">
         <Form
             name="basic"

@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import {data, useParams} from "react-router-dom"
+import {data, useNavigate, useParams} from "react-router-dom"
 import { getTopic } from "../../services/topicService";
 import { getListQuestion } from "../../services/questionService";
+import { getCookie } from "../../helpers/cookie";
+import { createAnswer } from "../../services/quizService";
 function Quiz(){
   const params = useParams();
   const [dataTopic,setDataTopic] = useState();
   const [dataQuestion,setDataQuestion] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -23,11 +26,32 @@ function Quiz(){
     fetchApi();
   },[]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e);
+
+    let choiceAnswers = [];
+    for(let i = 0; i < e.target.elements.length; i++){
+      if(e.target.elements[i].checked){
+        const name = e.target.elements[i].name;
+        const value = e.target.elements[i].value;
+        choiceAnswers.push({
+          questionId: parseInt(name),
+          answer: parseInt(value)
+        })
+      }
+    }
+    let options = {
+      userId: parseInt(getCookie("id")),
+      topicId: parseInt(params.id),
+      answers: choiceAnswers
+    }
+    const response = await createAnswer(options);
+    if(response){
+      navigate(`/result/${response.id}`);
+    }
   }
-  // console.log(dataQuestion);
+
+
 
   return(
     <>
